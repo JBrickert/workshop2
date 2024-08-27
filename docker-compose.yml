@@ -1,4 +1,4 @@
-version: "3.8"
+version: '3.8'
 services:
   web:
     build: ./app
@@ -13,10 +13,11 @@ services:
       - DB_NAME=nc_tutorials_db
       - DB_USER=postgres
       - DB_PASSWORD=admin123
-      - DB_HOST=YOUR_DB_ENDPOINT_HERE
+      - DB_HOST=nctutorials.c54qo2aig3ly.us-west-2.rds.amazonaws.com
       - DB_PORT=5432
       - DATABASE=postgres
-      - VIRTUAL_HOST=YOUR_EC2_INSTANCE_DNS_HERE
+      - VIRTUAL_HOST=ec2-34-210-246-131.us-west-2.compute.amazonaws.com
+
       - VIRTUAL_PORT=8000
   nginx:
     build: ./nginx
