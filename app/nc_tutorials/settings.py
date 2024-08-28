@@ -87,7 +87,7 @@ DATABASES = {
         'NAME': config('nc_tutorials_db'),
         'USER': config('postgres'),
         'PASSWORD': config('admin123'),
-        'HOST': config('ip-172-31-22-111.us-west-2.compute.internal'),
+        'HOST': config('nctutorials.c54qo2aig3ly.us-west-2.rds.amazonaws.com'),
         'PORT': config('5432'),
     }
 }
