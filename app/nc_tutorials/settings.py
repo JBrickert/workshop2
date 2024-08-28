@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'nc_tutorials.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': config('nc_tutorials_db'),
         'USER': config('postgres'),
         'PASSWORD': config('admin123'),
